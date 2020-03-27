@@ -21,7 +21,7 @@
 % as it interprets the individual bytes of UTF-8 characters via TeX macros.
 %\usepackage[utf8]{inputenc}
 \usepackage{fontspec}
-
+%\usepackage{hyperref}
 % moderncv themes
 \moderncvstyle{fork}
 \moderncvcolor{grey}
@@ -109,13 +109,13 @@
 	% personal date
 	\firstname{Ruben}
 	\familyname{Blom}
-	\title {Bachelor of Science}
+	\title {Master of Science}
 	\address{Burgemeester van Tuylkade 80}{3553 AL Utrecht}{The Netherlands}
 	\mobile{+31 (6) 40 39 17 04}
 	\email{mail@rubenblom.eu}
 	\homepage{www.linkedin.com/in/RubenBlom-AI}\vspace{10 mm}
-	\photo[3cm][0pt]{pic.png}
-	\quote{I'm an enthousiastic and social student that likes to learn new things. As long as there is more to learn I'll be eager to do so. I~perform well individually and in groups, catch on to new things quickly and develop new skills fast. }
+	\photo[3cm][0pt]{foto_cv}
+	\quote{I'm enthousiastic, dedicated and motivated. As long as there is more to learn I'll be eager to do so. I~perform well individually and in groups, catch on to new things quickly and develop new skills fast.}
 	
 	% uncomment to suppress automatic page numbering for CVs longer than one page
 	\nopagenumbers{}
@@ -131,48 +131,53 @@
 		\maketitle
 		\vspace{-0.7cm}
 		\section{Experience}
-		\cventry{02/2018--now}{Netherlands Forensic Institute}{Master Thesis}{NFI/UvA}{}{Developing a deep neural Entity Linking model on the TAC dataset.}
-		\cventry{05/2017 - 06/2017}{SightCorp}{Group Project}{UvA}{}{
-			Creating and training Convolutional Neural Networks to predict the eye-gaze of a person using a picture of the face.	
-		}
+		\cventry{08/2019--now}{Forensic Data Scientist}{Dutch National Police}{Fulltime}{}{Employing Data Science models and algorithms to interpretate forensic data while providing digital-forensics advice for police investigators.}
+		\cventry{01/2019--08/2019}{Data Scientist}{Dutch Tax Administration}{Fulltime}{}{Creating and improving existing models to assist Tax Inspectors to detect anomalies and/or fraud.}
+		\cventry{02/2018--10/2018}{Master Thesis}{Netherlands Forensic Institute}{NFI/UvA}{Graded 7.5}{Deep Neural Entity Linking on the TAC-KBP Dataset through encoding of context, type, and description information. \href{https://www.rubenblom.eu/master_thesis.pdf}{Download}}
 		\cventry{01/2016 - 06/2016}{University of Amsterdam}{Bachelor Thesis}{ILLC/UvA}{Graded 8.5}{
 			A Lexicon-based Unsupervised Approach to Recognizing Changes in Opinions - Case Study on `Artificial Intelligence'
-		}
+		\href{https://www.rubenblom.eu/bachelor_thesis.pdf}{Download}}
 		\cventry{08/2015 - 01/2016}{TextKernel}{Internship}{UvA}{}{
-			Researching smart ways of creating document fingerprints to allow duplicate checking \\ without the use of the full text.
+			Researching smart ways of creating document fingerprints to allow duplicate checking \\ without the use of the full text. Results, then, have been implemented in production code.
 		}
-		\cventry{05/2015 - 06/2015}{VDP Medical}{Group Project}{UvA}{}{
-			Data-mining and event-based learning on client order data to predict next order size\\and detect anomalies.
+		\section{Elective Courses}
+		\cventry{}{Deep Learning}{}{}{Graded 8.5}{
+			Theory of Deep Learning, namely of modern, multi-layered neural networks and practise with training on Big Data using TensorFlow and CUDA.
 		}
-		\cventry{01/2015 - 02/2015}{Copernica}{Group Project}{UvA}{}{
-			Using machine learning to predict e-mail throttling of e-mail providers. 
+		\cventry{}{Computer Vision 2}{}{}{Graded 8}{
+			Course discussing State-of-the-Art computer vision techniques on Object Detection and Recognition, 3D Reconstruction and Human-Behavoir Analysis.
+		}		
+		\cventry{}{Natural Language Processing 2}{}{}{Graded 8}{
+			In-dept course on structure prediction problems. Discussions and practical sessions on the latest models of both Statistical and Neural approaches on Machine Translation.
 		}
+		\cventry{}{Information Retreival 2}{}{}{Graded 8.5}{
+			Course with focus on the design, execution and analysis of cutting edge retreival methods. These include Ranking Models, Click Models, Social Media Search, Recommendation Algorithms.}
+		\clearpage
 		
-		
-		\section{Jobs}
-		\cventry{2016 - 2018}{University of Amsterdam}{Teaching Assistant}{Amsterdam}{}{Teaching classes, helping students and grading their work.}
-		\cventry{2012 - 2014}{MijnStudent}{PC-student}{Utrecht}{}{Computer help at home. Removing viruses, install and remove software etc.}
+		\section{Other Jobs}
+		\cventry{2017 -- 2018}{University of Amsterdam}{Teaching Assistant}{Amsterdam}{}{Teaching classes, helping students and grading their work.}
+
 		\vspace{1em}
 		\section{Education}
-		\cventry{09/2016 - present}{Artificial Intelligence}{Universiteit van Amsterdam}{Amsterdam}{}{}
-		\cventry{09/2013 - 07/2016}{Kunstmatige Intelligentie}{Universiteit van Amsterdam}{Amsterdam}{}{}
-		\cventry{09/2011 - 07/2013}{Kunstmatige Intelligentie}{Universiteit Utrecht}{Utrecht}{}{}
-		\cventry{09/2010 - 07/2011}{Werktuigbouwkunde}{Technische Universiteit Eindhoven}{Eindhoven}{}{}
+		\cventry{09/2016 - 11-2018}{Artificial Intelligence MSc}{Universiteit van Amsterdam}{Amsterdam}{GPA 7.6}{}
+		\cventry{09/2013 - 07/2016}{Kunstmatige Intelligentie BSc}{Universiteit van Amsterdam}{Amsterdam}{GPA 7.5}{}
+		\cventry{09/2011 - 07/2013}{Kunstmatige Intelligentie BSc}{Universiteit Utrecht}{Utrecht}{}{}
+		\cventry{09/2010 - 07/2011}{Werktuigbouwkunde BSc}{Technische Universiteit Eindhoven}{Eindhoven}{}{}
 		\cventry{09/2004 - 07/2010}{VWO, N\&T}{Guido de Brès}{Amersfoort}{}{}
 		\vspace{1em}
 		\section{Side activities}
 		\cventry{2014 - 2016}{Board of studies}{Student member}{University of Amsterdam}{}{Evaluating courses and overall study curriculum.}
 		\cventry{2013 - 2014}{Treasurer}{Committee of VGS-Nederland}{}{National board of all \emph{VGS} student associations}{}{}
-		\cventry{2010 - 2015}{Commission work in student association}{}{}{}{Managing website, organizing lectures, provide tutoring to new students}
+		\cventry{2010 - 2015}{Commission work in student association}{}{}{}{Provide tutoring in calculus, statistics and or computer science to new students}
 		
-		\section{Technical skills and hobbies}
-		\cvline{Languages}{Java, Python, C, C++, Prolog, PHP, JS}
-		\cvline{Databases}{MySQL, PostgreSQL, Sqlite, MongoDB}
-		\cvline{Technologies}{Tensorflow, CUDA, Unix, Bash, Git, SVN, \LaTeX{}}
-		\cvline{Hobbies}{Music, Woodcrafting, Home-automation}
+		\section{Technical skills}
+		\cvline{Machine Learning}{Deep Learning, Support Vector Machines, Clustering, Reinforcement Learning}
+		\cvline{Statistical Methods}{Na\"{i}ve Bayes, Logistic Regression}
+		\cvline{Languages}{Python (Tensorflow, scikit-learn, pandas), Java, MatLab, SQL, SAS}
+		\cvline{Technologies}{CUDA, Unix, Bash, Git, PyCharm/DataGrip, SVN, \LaTeX{}}
 		
 		\section{Languages}
-		\cvlistitem{Dutch (First language)}
-		\cvlistitem{English (Fluent)}
+		\cvlistitem{Dutch (Native)}
+		\cvlistitem{English (Highly proficient)}
 		
 	\end{document}
