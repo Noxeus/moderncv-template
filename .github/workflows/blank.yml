@@ -1,0 +1,7 @@
+- name: xelatex GitHub Action
+  # You may pin to the exact commit or the version.
+  # uses: marcomicera/xelatex-action@2cf2594f39f93aa9f93db02bcad781084ad5f434
+  uses: marcomicera/xelatex-action@v0.3
+  with:
+    # Input file to be compiled
+    input-file: resume.tex
